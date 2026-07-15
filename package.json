@@ -1,0 +1,28 @@
+{
+  "name": "jan25-typescript-intro",
+  "version": "1.0.0",
+  "description": "TypeScript fundamentals!",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild":"node -e \"require('node:fs').rmSync('dist',{recursive:true, force:true})\"",
+    "build":"tsc",
+    "dev":"node dist/index.js",
+    "build:dev":"npm run build && npm run dev",
+    "watch":"tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexStormwood/jan25-typescript-intro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AlexStormwood/jan25-typescript-intro/issues"
+  },
+  "homepage": "https://github.com/AlexStormwood/jan25-typescript-intro#readme",
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
